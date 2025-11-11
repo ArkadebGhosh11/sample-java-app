@@ -1,0 +1,9 @@
+name: sample-java-app
+image: openjdk:17-jdk-slim
+replicas: 1
+container_port: 8080
+service_type: NodePort
+service_port: 80
+node_port: 30000
+env:
+  JAVA_OPTS: "-Xms256m -Xmx512m"
